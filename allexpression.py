@@ -1,0 +1,31 @@
+a=int(input("enter first number"))
+b=int(input("enter second number"))
+print('\nPerform all arthimatic expression')
+print('Addition = ',a+b)
+print('Subtraction= ',a-b)
+print('Multiplication =',a*b)
+print('Divison = ',a/b)
+print('Power = ',a**b)
+print('Floor divison = ',a//b)
+print('Modulas = ',a%b)
+print('\nPerform integral expression')
+d=a+float(b)
+print(d)
+print('\nfloating expression')
+print(a/b)
+print("\nRelational expression")
+g=a>=b
+print(g)
+print('\nLogical expression')
+t=not a
+s=a and b
+v=a or b
+print(t)
+print(s)
+print(v)
+print('\nBitwise expression')
+h=a>>2
+print(h)
+print('\nCombinational expression')
+r=a+(b>>1)
+print(r)

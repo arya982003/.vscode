@@ -1,0 +1,15 @@
+import math
+a=int(input('enter the radius of the circle'))
+p=math.pi
+print('circumference of the circle is',2*p*a,'and area is',p*a**2)
+b=float(input('enter the no.'))
+print('the ceil value ',math.ceil(b),'and floor value',math.floor(b))
+print('the factorial of',math.factorial(a))
+c=int(input('enter a interger number'))
+print('the gcd ',math.gcd(a,c))
+print('the absolute value ',math.fabs(a))
+print('the exponent value =',math.exp(a))
+print('the exponent value =',math.exp(b))
+print('the power of',c,'is',math.pow(a,c))
+print('logarithm value =',math.exp(c))
+print('the square root =',math.sqrt(a))
