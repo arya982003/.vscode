@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>slidder</title>
+ <style>
+    .slidder
+    {
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        background-color: aqua;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        margin-top: 10px;
+        animation: slidder 25s infinite linear;
+    }
+    @keyframes slidder 
+    { 0% {background-image: url('india gate.jpg');}
+      20% {background-image: url('taj hotal.jpg');}
+      40% {background-image: url('golden temple.jpg');}
+      60% {background-image: url('hawa mahal.jpg');}
+      80% {background-image: url('kasmir.jpg');}
+      100%{background-image: url('TajMahal.webp');}
+} 
+ </style>
+</head>
+<body>
+    <div class="slidder">
+        
+    </div>
+</body>
+</html>

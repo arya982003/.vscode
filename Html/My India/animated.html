@@ -1,0 +1,210 @@
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Dirt&display=swap" rel="stylesheet"> 
+<head>
+    <title>animation</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slidder {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+        }
+
+        .overlay {
+            background: linear-gradient(rgba(19, 9, 9, 0.5), rgba(0, 0, 0, 0.7));
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+        }
+
+        #slideimg {
+            width: 100%;
+            height: 100%;
+            animation: zoom 10s linear infinite;
+        }
+        @keyframes zoom {
+            0%{
+                transform: scale(1.3);
+            }
+            20%{
+                transform: scale(1);
+            }
+            40%{
+                transform: scale(1.3);
+            }
+            60%{
+                transform: scale(1);
+            }
+            80%{
+                transform: scale(1.3);
+            }
+            100%{
+                transform: scale(1);
+            }
+            
+        }
+
+        .navbar {
+            float: left;
+            width: 100%;
+            height: 10vh;
+            padding-left: 5px;
+            background: transparent;
+            border-radius: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        .logo {
+            width: 19%;
+            height: 25%;
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 70px;
+            cursor: pointer;
+        }
+
+        .menu li {
+            float: left;
+            list-style: none;
+        }
+
+        .menu li a {
+            padding: 2px 2px;
+            margin-right: 40px;
+            color: rgb(0, 0, 0);
+            text-decoration: solid;
+            font: bolder;
+            font-size: larger;
+            font-family: 'Rubik Dirt';
+            letter-spacing: 1px;
+        }
+
+        main {
+            height: 85vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .search input {
+            border-radius: 5px;
+            border: 2px solid black;
+            color: rgb(44, 33, 51);
+            padding: 3px;
+        }
+        .search button{
+            background-color: rgb(142, 51, 39);
+            font-size: medium;
+        }
+
+        a:hover {
+            background-color: rgb(195, 159, 193);
+            text-decoration: solid;
+        }
+   .content{
+    text-align: center;
+     padding-top: 17%;
+   }
+   .content h1{
+    color: white;
+    text-decoration: solid;
+    font-size: 550%;
+    letter-spacing: 3px;
+   }
+   .content h2{
+    color: red;
+    text-decoration: solid;
+    font-size: xx-large;
+    letter-spacing: 2px;
+   }
+   .change_content:after{
+       content:'';
+       animation:changetext 10s linear infinite;
+       color: aqua;
+   }
+   @keyframes changetext {
+    0%{content:"Agra";}
+    20%{content: "Amritsar";}
+    40%{content: "Jaipur";}
+    60%{content: "Delhi";}
+    80%{content: "Kashmir";}
+    100%{content: "Mumbai";}
+   }
+    </style>
+</head>
+
+<body onload="slidder()">
+    <div class="banner">
+        <div class="slidder">
+            <img src="TajMahal.webp" id="slideimg">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="indialogo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><b><a href="#">Home</a></b></li>
+                        <li><b><a href="#">Services </a></b></li>
+                        <li><b><a href="#">Contact</a></b></li>
+                        <li><b><a href="#">About us</a></b></li>
+                    </ul>
+                </div>
+                <div class="search"> <b><input type="text" size="35" placeholder="     search here......">
+                        <button>Search</button></b>&emsp13;&emsp;</div>
+            </div>
+            <div class="content">
+                <h1>WELCOME TO INDIA</h1>
+                <h2>DO COME AND VISIT<span class="change_content"> </span></h2>
+            </div>
+
+        </div>
+    </div>
+  <script>
+    var slideimg =document.getElementById("slideimg");
+    var images=new Array(
+        "TajMahal.webp",
+        "golden temple.jpg",
+        "hawa mahal.jpg",
+        "india gate.jpg",
+       " kasmir.jpg",
+        "taj hotal.jpg"
+    );
+    var len=images.length;
+    var i=0;
+    function slidder(){
+        if(i>len-1){
+            i=0;
+        }
+        slideimg.src=images[i];
+        i++;
+        setTimeout('slidder()',3500);
+    }
+  </script>
+</body>
+
+</html>
