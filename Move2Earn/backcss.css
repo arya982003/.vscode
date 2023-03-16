@@ -1,0 +1,48 @@
+.p1{
+    margin-top: 65%;margin-left: 20%; margin-bottom: 10%;
+    background-color: rgb(220, 103, 103);height: 25vh; padding-bottom: 20%;
+}
+.c1{
+    width: 80%;margin: 10%;margin-bottom: 30%;
+
+}
+.meeting,.ques{
+    font-size: 6rem;font-weight: 800;
+    margin-left: 18%;
+}
+.ques{
+    margin-bottom: 10%;margin-top: 5%;
+}
+.meetpara{
+    margin-left: 19%;font-size: 2rem; margin-bottom: 10%;
+}
+.c{
+    width: 100%;margin-left: 20%;margin: 10%;
+    margin-right: 20%;
+}
+.card-img{
+    height: 60vh;width: 90%;
+}
+.c2{
+    width: 87%;
+}
+.r1{
+    background-color: rgb(32, 80, 95);
+}
+@media screen and (max-width: 767px) {
+    .p1{
+        height: 30vh;
+    }
+    .meeting{
+        font-size: 25px;font-weight: 800;margin-top: 20px;
+    }
+    .ques{
+        font-size: 20px;margin-top: 20px;
+    }
+    .meetpara{
+        margin-left: 10px;font-size: 14px;
+    }
+}
+.p3{
+    border: 2px solid  #1EB808;padding: 20px;
+}
