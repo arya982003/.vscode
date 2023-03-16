@@ -1,0 +1,54 @@
+.head{
+    background: url('images/image\ 27.png');
+}
+.btn{
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-item {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  .jumbotron {
+    background-image: url('https://source.unsplash.com/1600x900/?shoes');
+    height: 400px;
+    background-size: cover;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* optional */
+  }
+  

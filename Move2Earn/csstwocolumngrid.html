@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          
+          @media screen and (min-width: 768px) {
+            .container {
+              grid-template-columns: 1fr 1fr;
+            }
+          }
+          
+          .column {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+          <h2>Column 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac quam id augue pellentesque molestie. Vestibulum euismod euismod elit, sit amet efficitur ipsum aliquet a. Donec ac felis odio. </p>
+        </div>
+        <div class="column">
+          <h2>Column 2</h2>
+          <p>Nullam sit amet velit nunc. Pellentesque congue massa eget nibh dictum ultrices. Aenean nec enim tellus. Fusce dictum tellus sed sem auctor, sit amet congue ante imperdiet. </p>
+        </div>
+      </div>
+      
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac quam id augue pellentesque molestie. Vestibulum euismod euismod elit, sit amet efficitur ipsum aliquet a. Donec ac felis odio. </p>
+          </div>
+          <div class="col-md-6">
+            <h2>Column 2</h2>
+            <p>Nullam sit amet velit nunc. Pellentesque congue massa eget nibh dictum ultrices. Aenean nec enim tellus. Fusce dictum tellus sed sem auctor, sit amet congue ante imperdiet. </p>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
+  
