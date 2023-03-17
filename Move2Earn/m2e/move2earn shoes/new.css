@@ -1,0 +1,84 @@
+.head {
+    background: url('images/image27.png') ;height: auto;position: relative;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    color: #1EB808!important;
+    }
+.navbar .navbar-toggler:focus {
+    color: #1EB808;
+  }    
+#grid2,#grid1{
+    background-color: rgba(240, 255, 255, 0.007);
+}
+#grid2{
+    margin-left: 20%;
+}
+.magic{
+
+font-family: 'Saira SemiCondensed';
+font-style: normal;
+font-weight: 700;
+font-size: 5rem;
+color: rgb(0, 0, 0);
+border: 2px solid #b2f3b000;
+text-shadow: 0px 0px 7px #1EB808, 0px 0px 7px #1EB808, 0px 0px 7px #1EB808, 0px 0px 7px #1EB808, 0px 0px 7px #1EB808, 0px 0px 7px #1EB808;
+}
+.blockchain{
+    font-family: 'Saira SemiCondensed';
+    font-weight: 250;
+    font-size: 2rem;top: 44%;
+    color: #FFF3F3;
+}
+.lorem{
+    font-family: 'Saira';
+      font-style: normal;
+      font-weight: 10;
+      font-size: 1.2rem;color:white;
+      top: 49%;
+}
+
+#btn1{
+  background: #1EB808;position: relative;width:25%;
+          border-radius: 4px;color: white; font-family: 'Saira SemiCondensed';
+          font-style: normal;padding:10px;margin: 10px 10px 10px 0px;
+}
+#btn2{
+  border: 1px solid #8ae987;position: relative;color: white;
+      box-shadow: 0px 0px 5px 1px #1EB808;width:25%;padding:10px;margin: 10px;
+      border-radius: 5px;font-family: 'Saira SemiCondensed';
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-item {
+    background-color: #242121;
+    padding: 15px;color: white;
+    font-size: 1rem;border-radius: 20px 20px 0px 0px;
+  }
+  @media screen and (max-width: 320px) {
+    .magic{
+        font-weight: 700;
+        font-size: 4.5rem;
+        }
+  }
+
+  @media screen and (max-width: 767px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    
+     font-style: normal;color: white;padding:10px;margin: 10px;
+    }
+}
+    .vectorr{
+        width: 80%;
+        height: auto !important;margin-top: 20%;
+    }
+    .shoes{
+        width: 100%;
+        height: auto !important;
+        margin-top: -80%;margin-left: -10%;
+    }
