@@ -1,0 +1,70 @@
+/* RoadMap */
+#roadmap{
+    margin-top: 300px;
+    position: relative;
+    border: 2px solid red;
+}
+.bottomborder{
+    border-bottom: 4px solid #B2F3B0;
+}
+.header4{
+    text-align: center;
+    padding: 40px;
+}
+.hex1{
+ position: absolute;
+ top: 0%;
+ left:8%;
+}
+.hex2{
+    position: absolute;
+    left: 4%;
+    top: 30%;
+}
+.hex3{
+    position: absolute;
+    left: 5%;
+    top:73% ;
+}
+.hex4{
+    position: absolute;
+    right: 0%;
+    top: 40%;
+}
+.img-res{
+    max-width: 100%;
+    height: auto !important;
+}
+.roadheader{
+    font-size: 3vmin;
+}
+.leftborder{
+    border-left: 4px solid #B2F3B0;
+}
+.roadpara{
+    font-size: 2.4vmin;
+}
+.rightborder{
+    border-right: 4px solid #B2F3B0;
+    /* border-top-right-radius: 4px solid #B2F */
+}
+.triangle3{
+    position: absolute;
+    top:9%;
+    right:5%;
+}
+.upperborder{
+    border-top: 4px solid #B2F3B0;
+}
+
+
+
+
+
+
+/* Hide the element with the class on screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .hide {
+      display: none;
+    }
+  }
